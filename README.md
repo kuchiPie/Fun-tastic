@@ -5,4 +5,9 @@ An end-to-end teaching-learning platform where children will learn from their fa
 1. MERN stack
 2. Flask
 3. OpenAI APIs
-4. Blender
+4. KalidoKit
+5. MediaPipe
+
+## AI Algorithms
+1. GPT-3
+2. FaceMesh
