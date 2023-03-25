@@ -9,7 +9,8 @@ An end-to-end teaching-learning platform where children will learn from their fa
 5. MediaPipe
 
 ## AI Algorithms
-1. GPT-3
+1. GPT-3 :
+Usgae: The course instructor will upload the relevant material in the form of heading and the context. Then the API will preprocess the material to make GPT model learn for the text and the student can ask the doubts to the virtual agent.
 2. FaceMesh
 
 
