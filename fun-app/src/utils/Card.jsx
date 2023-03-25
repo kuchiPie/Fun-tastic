@@ -1,25 +1,25 @@
 import React from "react";
 
-const Card = () => {
+const Card = ({item}) => {
+  console.log(item)
   return (
     <>
       <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-2">
         <a href="#">
-          <img
+          {/* <img
             className="rounded-t-lg"
-            src="/docs/images/blog/image-1.jpg"
-            alt=""
-          />
+            src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fsjcit.ac.in%2Fwp-content%2Fuploads%2F2022%2F03%2Fmathematics-png.jpg&tbnid=xk7h5Q0H0QX6qM&vet=12ahUKEwiHlv2J1_f9AhVUkuYKHaXZBrMQMygCegUIARDmAQ..i&imgrefurl=https%3A%2F%2Fsjcit.ac.in%2Fmaths-staff%2F&docid=gkZYAjb3JJnJKM&w=1200&h=800&q=mathematics&ved=2ahUKEwiHlv2J1_f9AhVUkuYKHaXZBrMQMygCegUIARDmAQ"
+            // alt={item.name}
+          /> */}
         </a>
         <div className="p-5">
           <a href="#">
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-              Noteworthy technology acquisitions 2021
+              {item.name}
             </h5>
           </a>
           <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-            Here are the biggest enterprise technology acquisitions of 2021 so
-            far, in reverse chronological order.
+            {item.description}
           </p>
           <a
             href="#"

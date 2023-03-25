@@ -13,7 +13,7 @@ const App = () => {
         <Banner />
       </div>
       <Routes>
-        <Route exact path="/markeplace" element={<Marketplace />} />
+        <Route exact path="/marketplace" element={<Marketplace />} />
         <Route exact path="/create-course" element={<CreateCourse />} />
       </Routes>
       <Footer />
