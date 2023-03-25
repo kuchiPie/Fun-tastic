@@ -17,14 +17,14 @@ const AvatarSelect = () => {
       <div className="flex justify-center items-center w-full mb-5">
         <div className="flex flex-wrap w-1/2">
           {avtar.map((item, i) => (
-            <Link to={`/${i}/${item}`}>
+            <a href="http://localhost:8080/" target="_blank">
               <img
                 key={i}
                 className="w-20 h-20 mt-3 p-1 mx-2 rounded-full ring-2 ring-gray-300 dark:ring-gray-500"
                 src={item}
                 alt="Bordered avatar"
               />
-            </Link>
+            </a>
           ))}
         </div>
       </div>
