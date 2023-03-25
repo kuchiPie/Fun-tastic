@@ -1,5 +1,12 @@
 # Fun-tastic
-An end-to-end teaching-learning platform where children will learn from their favorite toons. Teachers can upload their teaching videos which would be animated by the platform and then mapped to the favourite cartoon. The virtual agent in the form of favorite cartoon can also solve children's doubts and curious questions.
+Welcome to a world where learning is fun and engaging! Our end-to-end teaching-learning platform is not just any ordinary educational tool, but a place where children will be able to learn from their favorite cartoons. Imagine a world where students are excited to learn, and teachers are thrilled to teach.
+
+Our platform offers a unique feature that allows teachers to upload their teaching videos, which will be animated by our platform and mapped to the students' favorite cartoon characters. This means that students will be able to learn from their beloved cartoon characters, making the entire experience more exciting and memorable.
+
+But that's not all! Our platform also includes a virtual agent in the form of the favorite cartoon character. This virtual agent will be able to solve students' doubts and answer their curious questions, making the learning experience even more interactive and engaging.
+
+With our platform, students will be able to learn in a way that is both entertaining and effective. They will be able to immerse themselves in a world of learning, where their favorite cartoon characters come to life and guide them through the educational process.
+
 
 ## Tech-Stack
 1. MERN stack
@@ -7,6 +14,14 @@ An end-to-end teaching-learning platform where children will learn from their fa
 3. OpenAI APIs
 4. KalidoKit
 5. MediaPipe
+
+## AI Algorithms
+1. GPT-3 :
+Usage: With our platform, course instructors can easily upload their course material in the form of headings and context. Our powerful API will then preprocess the material to make it easy for our advanced GPT model to learn and understand the text. This means that our system can provide students with accurate and relevant information quickly and effectively. Our virtual agent is also here to help students with any doubts they may have. The virtual agent is always ready to answer students' questions and provide them with helpful resources. This feature allows students to have a more personalized learning experience, as they can get assistance whenever they need it.
+
+
+2. FaceMesh
+
 
 ## Adding UI 
 
@@ -33,6 +48,11 @@ An end-to-end teaching-learning platform where children will learn from their fa
 <img width="846" alt="Screenshot 2023-03-26 at 3 21 19 AM" src="https://user-images.githubusercontent.com/82640789/227744224-a8ad0237-ddf9-4040-a16d-3f13ca0ddafa.png">
 
 <br/>
-## AI Algorithms
-1. GPT-3
-2. FaceMesh
+
+# Using Face Mesh Media Pipe and KalidoKit 
+<img width="1452" alt="Screenshot 2023-03-26 at 3 37 55 AM" src="https://user-images.githubusercontent.com/82640789/227744728-f16db845-cacf-4481-baba-bd9f4b264293.png">
+</br>
+<img width="1470" alt="Screenshot 2023-03-26 at 3 39 01 AM" src="https://user-images.githubusercontent.com/82640789/227744733-ce1aa780-adc3-41ba-9382-d02f5e797596.png">
+</br>
+<img width="1470" alt="Screenshot 2023-03-26 at 3 39 13 AM" src="https://user-images.githubusercontent.com/82640789/227744740-9e830515-5b47-4f95-8fc4-dcf8dcc5e94d.png">
+
