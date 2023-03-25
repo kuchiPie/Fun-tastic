@@ -8,6 +8,11 @@ An end-to-end teaching-learning platform where children will learn from their fa
 4. KalidoKit
 5. MediaPipe
 
+## AI Algorithms
+1. GPT-3
+2. FaceMesh
+
+
 ## Adding UI 
 
 ### Authentication Process 
@@ -33,6 +38,11 @@ An end-to-end teaching-learning platform where children will learn from their fa
 <img width="846" alt="Screenshot 2023-03-26 at 3 21 19 AM" src="https://user-images.githubusercontent.com/82640789/227744224-a8ad0237-ddf9-4040-a16d-3f13ca0ddafa.png">
 
 <br/>
-## AI Algorithms
-1. GPT-3
-2. FaceMesh
+
+# Using Face Mesh Media Pipe and KalidoKit 
+<img width="1452" alt="Screenshot 2023-03-26 at 3 37 55 AM" src="https://user-images.githubusercontent.com/82640789/227744728-f16db845-cacf-4481-baba-bd9f4b264293.png">
+</br>
+<img width="1470" alt="Screenshot 2023-03-26 at 3 39 01 AM" src="https://user-images.githubusercontent.com/82640789/227744733-ce1aa780-adc3-41ba-9382-d02f5e797596.png">
+</br>
+<img width="1470" alt="Screenshot 2023-03-26 at 3 39 13 AM" src="https://user-images.githubusercontent.com/82640789/227744740-9e830515-5b47-4f95-8fc4-dcf8dcc5e94d.png">
+
