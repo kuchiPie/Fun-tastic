@@ -17,7 +17,9 @@ With our platform, students will be able to learn in a way that is both entertai
 
 ## AI Algorithms
 1. GPT-3 :
-Usgae: The course instructor will upload the relevant material in the form of heading and the context. Then the API will preprocess the material to make GPT model learn for the text and the student can ask the doubts to the virtual agent.
+Usage: With our platform, course instructors can easily upload their course material in the form of headings and context. Our powerful API will then preprocess the material to make it easy for our advanced GPT model to learn and understand the text. This means that our system can provide students with accurate and relevant information quickly and effectively. Our virtual agent is also here to help students with any doubts they may have. The virtual agent is always ready to answer students' questions and provide them with helpful resources. This feature allows students to have a more personalized learning experience, as they can get assistance whenever they need it.
+
+
 2. FaceMesh
 
 
