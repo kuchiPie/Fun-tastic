@@ -9,6 +9,7 @@ import HomePage from "./components/HomePage";
 import LoginPage from "./components/LoginPage";
 import SignupPage from "./components/SignupPage";
 import AvatarSelect from "./components/AvatarSelect";
+import ChatApp from "./components/ChatApp";
 const App = () => {
   return (
     <>
@@ -21,6 +22,7 @@ const App = () => {
         <Route exact path="/marketplace" element={<Marketplace />} />
         <Route exact path="/create-course" element={<CreateCourse />} />
         <Route exact path="/select-avatar" element={<AvatarSelect />} />
+        <Route exact path="/student-advisor" element={<ChatApp />} />
       </Routes>
       <Footer />
     </>
