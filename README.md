@@ -55,4 +55,6 @@ Usage: With our platform, course instructors can easily upload their course mate
 <img width="1470" alt="Screenshot 2023-03-26 at 3 39 01 AM" src="https://user-images.githubusercontent.com/82640789/227744733-ce1aa780-adc3-41ba-9382-d02f5e797596.png">
 </br>
 <img width="1470" alt="Screenshot 2023-03-26 at 3 39 13 AM" src="https://user-images.githubusercontent.com/82640789/227744740-9e830515-5b47-4f95-8fc4-dcf8dcc5e94d.png">
+# A Chat Bot That help children to solve their queries (Advisory Bot)
+<img width="1052" alt="Screenshot 2023-03-26 at 4 15 09 AM" src="https://user-images.githubusercontent.com/82640789/227746008-ec5a84a3-9ce6-497b-a9f9-fb56a7d3379b.png">
 
