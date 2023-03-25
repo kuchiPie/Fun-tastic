@@ -1,5 +1,6 @@
 import React from "react";
 import cn from "../assets/cn.jpg";
+import { Link, NavLink } from "react-router-dom";
 const Navbar = () => {
   const [open, setOpen] = React.useState(false);
   const [flyer, setFlyer] = React.useState(false);
@@ -85,36 +86,24 @@ const Navbar = () => {
                 >
                   <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
                     <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
-                      <a
-                        href="#"
+                      <Link
+                        to="/create-course"
                         className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
                       >
                         {/* Heroicon name: outline/chart-bar */}
-                        <svg
-                          className="flex-shrink-0 h-6 w-6 text-indigo-600"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          aria-hidden="true"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
-                          />
-                        </svg>
-                        <div className="ml-4">
-                          <p className="text-base font-medium text-gray-900">
-                            Analytics
-                          </p>
-                          <p className="mt-1 text-sm text-gray-500">
-                            Get a better understanding of where your traffic is
-                            coming from.
-                          </p>
-                        </div>
-                      </a>
+                        <>
+                        
+                          <div className="ml-4">
+                            <p className="text-base font-medium text-gray-900">
+                              Create Course
+                            </p>
+                            <p className="mt-1 text-sm text-gray-500">
+                              Get a better understanding of where your traffic
+                              is coming from.
+                            </p>
+                          </div>
+                        </>
+                      </Link>
                       <a
                         href="#"
                         className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
@@ -581,8 +570,8 @@ const Navbar = () => {
               </div>
               <div className="mt-6">
                 <nav className="grid gap-y-8">
-                  <a
-                    href="#"
+                  <Link
+                    to="create-course"
                     className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
                   >
                     {/* Heroicon name: outline/chart-bar */}
@@ -602,9 +591,9 @@ const Navbar = () => {
                       />
                     </svg>
                     <span className="ml-3 text-base font-medium text-gray-900">
-                      Analytics
+                      Create Course
                     </span>
-                  </a>
+                  </Link>
                   <a
                     href="#"
                     className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"

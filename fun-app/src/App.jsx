@@ -3,15 +3,20 @@ import Banner from "./components/Banner";
 import Navbar from "./Components/Navbar";
 import Footer from "./components/Footer";
 import Marketplace from "./components/Marketplace";
+import { Routes, Route } from "react-router-dom";
+import CreateCourse from "./components/CreateCourse";
 const App = () => {
   return (
     <>
       <Navbar />
       <div className="w-screen flex justify-center">
         <Banner />
-       </div>
-       <Marketplace/>
-       <Footer/>
+      </div>
+      <Routes>
+        <Route exact path="/markeplace" element={<Marketplace />} />
+        <Route exact path="/create-course" element={<CreateCourse />} />
+      </Routes>
+      <Footer />
     </>
   );
 };
