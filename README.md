@@ -1,5 +1,12 @@
 # Fun-tastic
-An end-to-end teaching-learning platform where children will learn from their favorite toons. Teachers can upload their teaching videos which would be animated by the platform and then mapped to the favourite cartoon. The virtual agent in the form of favorite cartoon can also solve children's doubts and curious questions.
+Welcome to a world where learning is fun and engaging! Our end-to-end teaching-learning platform is not just any ordinary educational tool, but a place where children will be able to learn from their favorite cartoons. Imagine a world where students are excited to learn, and teachers are thrilled to teach.
+
+Our platform offers a unique feature that allows teachers to upload their teaching videos, which will be animated by our platform and mapped to the students' favorite cartoon characters. This means that students will be able to learn from their beloved cartoon characters, making the entire experience more exciting and memorable.
+
+But that's not all! Our platform also includes a virtual agent in the form of the favorite cartoon character. This virtual agent will be able to solve students' doubts and answer their curious questions, making the learning experience even more interactive and engaging.
+
+With our platform, students will be able to learn in a way that is both entertaining and effective. They will be able to immerse themselves in a world of learning, where their favorite cartoon characters come to life and guide them through the educational process.
+
 
 ## Tech-Stack
 1. MERN stack
