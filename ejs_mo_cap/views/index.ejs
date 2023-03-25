@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- HTML Meta Tags -->
+    <title>Teaching Video Recorder</title>
+    <meta
+      name="description"
+      content="Teaching Video Recorder with your browser webcam!"
+    />
+
+    
+    <meta
+      name="viewport"
+      content="viewport-fit=cover, user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1"
+    />
+   
+    
+    <!--     Live2D SDK  -->
+    <script src="https://cubism.live2d.com/sdk-web/cubismcore/live2dcubismcore.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/dylanNew/live2d/webgl/Live2D/lib/live2d.min.js"></script>
+    <!--     PixiJS Renderer -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.1.3/pixi.min.js"></script>
+    <!--     PixiJS Live2D Plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/pixi-live2d-display/dist/index.min.js"></script>
+    <!--     Mediapipe or Tensorflow.js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/face_mesh.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--     Mediapipe Drawing Tools -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--     Mediapipe Camera Tools -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--     Kalidokit Kinematic Solver -->
+    <script src="https://cdn.jsdelivr.net/npm/kalidokit@1.1/dist/kalidokit.umd.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="preview">
+      <video class="input_video" width="1280px" height="720px"></video>
+      <canvas class="guides"></canvas>
+      
+    </div>
+    <h1 class="notranslate">
+      Fun-Tastic
+    </h1>
+    <nav>
+        <button id="rec" onclick="record()">
+            Record
+        </button>
+        <button id="" onclick="stop1()">
+            Stop
+        </button>
+        <button onclick="download1()">
+            Download
+        </button>
+    </nav>
+    <!-- <nav>
+      <a href="https://www.npmjs.com/package/kalidokit">
+        <img
+          src="https://cdn.glitch.me/447b6603-7eae-4da6-957d-73ee30c8e731%2Fnpm.png?v=1635133318451"
+        />
+      </a>
+      <a href="https://github.com/yeemachine/kalidokit">
+        <img
+          src="https://cdn.glitch.me/447b6603-7eae-4da6-957d-73ee30c8e731%2Fgithub.png?v=1635133310517"
+        />
+      </a>
+      <a href="https://twitter.com/yeemachine">
+        <img
+          src="https://cdn.glitch.me/447b6603-7eae-4da6-957d-73ee30c8e731%2Ftwitter.png?v=1635133322561"
+        />
+      </a>
+    </nav> -->
+    <canvas id="live2d"></canvas>
+    
+    <script type="module" src="./script.js">
+        
+
+        // const { createFFmpeg } = FFmpeg;
+        // const ffmpeg = createFFmpeg({
+        //     log: true
+        // });
+
+        // var canvas = document.querySelector("canvas");
+        // // var ctx = canvas.getContext("2d");
+        
+        // var videoStream = canvas.captureStream();
+        // var mediaRecorder = new MediaRecorder(videoStream, {mimeType: 'video/webm'});
+        // // console.log('#########')
+        
+
+        // var chunks = [];
+        // mediaRecorder.ondataavailable = function(e) {
+        //     chunks.push(e.data);
+        // };
+    
+
+        // mediaRecorder.onstop = function(e) {
+        //     var blob = new Blob(chunks, { 'type' : 'video/webm' });
+        //     var url = URL.createObjectURL(blob);
+
+        //     var a = document.createElement('a');
+        //     document.body.appendChild(a);
+        //     a.style = 'display: none';
+        //     a.href = url;
+        //     a.download = 'test.webm';
+        //     a.click();
+        //     // window.URL.revokeObjectURL(url);
+
+
+        // };
+
+        // function start_rec(){
+        //     // console.log(mediaRecorder)
+        //     mediaRecorder.start()
+        // }
+
+        // function stop_rec(){
+        //     mediaRecorder.onstop()
+        // }
+        // mediaRecorder.ondataavailable = function(e) {
+        //     chunks.push(e.data);
+        // };
+
+        // mediaRecorder.download = () =>{
+
+        // }
+
+        // mediaRecorder.start();
+        // setInterval(draw, 300);
+        // setTimeout(function (){ mediaRecorder.stop(); }, 5000);
+        function record(){
+            var chunks = [];
+            var canvas_stream = canvas.captureStream(30); // fps
+            // Create media recorder from canvas stream
+            this.media_recorder = new MediaRecorder(canvas_stream, { mimeType: "video/webm; codecs=vp9" });
+            // Record data in chunks array when data is available
+            this.media_recorder.ondataavailable = (evt) => { chunks.push(evt.data); };
+            // Provide recorded data when recording stops
+            this.media_recorder.onstop = () => {this.on_media_recorder_stop(chunks);}
+            // Start recording using a 1s timeslice [ie data is made available every 1s)
+            this.media_recorder.start(1000);
+        }
+        function stop1(){
+            this.media_recorder.stop();
+        }
+        function download1(){
+            var blob = new Blob(chunks, {type: "video/webm" });
+            const recording_url = URL.createObjectURL(blob);
+            // Attach the object URL to an <a> element, setting the download file name
+            const a = document.createElement('a');
+            a.style = "display: none;";
+            a.href = recording_url;
+            a.download = "video.webm";
+            document.body.appendChild(a);
+            // Trigger the file download
+            a.click();
+            setTimeout(() => {
+            // Clean up - see https://stackoverflow.com/a/48968694 for why it is in a timeout
+            URL.revokeObjectURL(recording_url);
+            document.body.removeChild(a);
+            }, 0);
+        }
+            
+
+    </script>
+    <script>
+        
+    </script>
+  </body>
+</html>
