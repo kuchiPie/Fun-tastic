@@ -8,6 +8,7 @@ import CreateCourse from "./components/CreateCourse";
 import HomePage from "./components/HomePage";
 import LoginPage from "./components/LoginPage";
 import SignupPage from "./components/SignupPage";
+import AvatarSelect from "./components/AvatarSelect";
 const App = () => {
   return (
     <>
@@ -19,6 +20,7 @@ const App = () => {
         <Route exact path="/signup" element={<SignupPage/>} />
         <Route exact path="/marketplace" element={<Marketplace />} />
         <Route exact path="/create-course" element={<CreateCourse />} />
+        <Route exact path="/select-avatar" element={<AvatarSelect />} />
       </Routes>
       <Footer />
     </>

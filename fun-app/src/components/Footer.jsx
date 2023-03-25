@@ -3,7 +3,7 @@ import cn from "../assets/cn.jpg"
 const Footer = () => {
   return (
     <>
-      <footer className="bg-white dark:bg-gray-900 max-w-9xl mx-auto px-4 sm:px-6">
+      <footer className="bg-white dark:bg-gray-900 max-w-9xl mx-auto px-4 sm:px-6 footer">
         <div className="mx-auto w-full container p-4 sm:p-6">
           <div className="md:flex md:justify-between">
             <div className="mb-6 md:mb-0">
@@ -17,23 +17,7 @@ const Footer = () => {
               </a>
             </div>
             <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
-              <div>
-                <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
-                  Resources
-                </h2>
-                <ul className="text-gray-600 dark:text-gray-400 font-medium">
-                  <li className="mb-4">
-                    <a href="#" className="hover:underline">
-                      Curricullam Network
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="hover:underline">
-                      Tailwind CSS
-                    </a>
-                  </li>
-                </ul>
-              </div>
+              
               <div>
                 <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
                   Follow us
